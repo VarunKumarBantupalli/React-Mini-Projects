@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>twitter.com</title>
+    <link rel="stylesheet" href="./css/output.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+
+    <link rel="shortcut icon" href="//abs.twimg.com/favicons/twitter.3.ico">
+</head>
+
+<body class=" bg-black text-white">
+    <div class="flex md:container mx-auto my-4">
+
+
+        <div class="first w-16 md:w-[70%]">
+
+            <div class="sidebar flex md:items-end  flex-col sticky top-0">
+                <div class="logo invert my-4 self-start mx-2 md:mx-16">
+
+                    <svg viewBox="0 0 24 24" aria-hidden="true"
+                        class="w-8 m-auto r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-lrsllp r-1nao33i r-16y2uox r-8kz0gk">
+                        <g>
+                            <path
+                                d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z">
+                            </path>
+                        </g>
+                    </svg>
+
+                </div>
+                <ul class="flex flex-col text-2xl space-y-3 md:px-11 font-bold w-full  ">
+                    <li
+                        class="flex md:justify-start items-center gap-3 justify-center  mr-4 md:w-fit  hover:bg-gray-900 hover:cursor-pointer px-5 py-3 hover:rounded-full">
+                        <span class="text-3xl material-symbols-outlined"> home </span> <span
+                            class="hidden md:block">Home</span>
+                    </li>
+                    <li
+                        class="flex md:justify-start items-center gap-3 justify-center  mr-4 md:w-fit  hover:bg-gray-900 hover:cursor-pointer px-5 py-3 hover:rounded-full">
+                        <span class="text-3xl material-symbols-outlined"> search </span><span
+                            class="hidden md:block">Explore</span>
+                    </li>
+                    <li
+                        class="flex md:justify-start items-center gap-3 justify-center  mr-4 md:w-fit  hover:bg-gray-900 hover:cursor-pointer px-5 py-3 hover:rounded-full">
+                        <span class="text-3xl material-symbols-outlined"> notifications </span><span
+                            class="hidden md:block">Notifications</span>
+                    </li>
+
+                    <li
+                        class="flex md:justify-start items-center gap-3 justify-center  mr-4 md:w-fit  hover:bg-gray-900 hover:cursor-pointer px-5 py-3 hover:rounded-full">
+                        <span class="text-3xl material-symbols-outlined"> lists </span><span
+                            class="hidden md:block">Lists</span>
+                    </li>
+                    <li
+                        class="flex md:justify-start items-center gap-3 justify-center  mr-4 md:w-fit  hover:bg-gray-900 hover:cursor-pointer px-5 py-3 hover:rounded-full">
+                        <span class="text-3xl material-symbols-outlined"> bookmarks </span><span
+                            class="hidden md:block">Bookmarks</span>
+                    </li>
+                    <li
+                        class="flex md:justify-start items-center gap-3 justify-center  mr-4 md:w-fit  hover:bg-gray-900 hover:cursor-pointer px-5 py-3 hover:rounded-full">
+                        <span class="text-3xl material-symbols-outlined"> Group </span><span
+                            class="hidden md:block">Communities</span>
+                    </li>
+                    <li
+                        class="flex md:justify-start items-center gap-3 justify-center  mr-4 md:w-fit  hover:bg-gray-900 hover:cursor-pointer px-5 py-3 hover:rounded-full">
+                        <span class="text-3xl material-symbols-outlined"> box </span><span
+                            class="hidden md:block">Premium</span>
+                    </li>
+                    <li
+                        class="flex md:justify-start items-center gap-3 justify-center  mr-4 md:w-fit  hover:bg-gray-900 hover:cursor-pointer px-5 py-3 hover:rounded-full">
+                        <span class="text-3xl material-symbols-outlined"> person </span><span
+                            class="hidden md:block">Profile</span>
+                    </li>
+
+                    <li>
+                        <div class="button w-full text-center my-4">
+                            <button
+                                class="hidden md:block bg-[#1d9bf0] px-20 text-xl rounded-full py-3 text-white">Post</button>
+                            <button
+                                class="md:hidden bg-[#1d9bf0]  px-2 md:px-4 text-xl rounded-full py-1 md:py-3 text-white">
+                                <span class="material-symbols-outlined">
+                                    edit
+                                </span>
+                            </button>
+                        </div>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+
+
+
+
+        <div class="second w-full  border-x-bg-gray-700 border-y-black border-[1px] ">
+            <div class="top flex m-3">
+                <div class="left w-1/2 p-1 flex justify-center  font-bold text-xl hover:bg-slate-900">For you</div>
+                <div class="right w-1/2 p-1 flex justify-center font-bold text-xl hover:bg-slate-900">Following</div>
+                <div class="settings p-2 rounded-full hover:bg-slate-900">
+                    <span class="material-symbols-outlined">
+                        settings
+                    </span>
+                </div>
+            </div>
+            <div class="h-[1px] w-full bg-gray-700"></div>
+
+            <div class="what flex gap-3">
+                <div class="img m-5 ">
+                    <img class="rounded-full w-16"
+                        src="https://pbs.twimg.com/profile_images/1756183589891317760/AKH-YqNG_x96.jpg" alt="">
+                </div>
+                <div class="w-full">
+                    <input class="w-full bg-black text-white outline-none my-3" type="text"
+                        placeholder="What is Happening?!">
+
+                    <div class=" text-blue-500 flex items-center gap-3">
+                        <span class="material-symbols-outlined mr-2">
+                            globe_asia
+                        </span>
+                        <span class="my-3 font-bold">Everyone can reply</span>
+                    </div>
+                    <div class="w-[80%] h-[0.2px] bg-gray-500"></div>
+
+                    <div class="flex justify-between items-center">
+                        <div class="flex gap-2 text-blue-400 my-3 font-thin">
+                            <span class="material-symbols-outlined cursor-pointer">
+                                image
+                            </span>
+                            <span class="material-symbols-outlined cursor-pointer">
+                                gif_box
+                            </span>
+
+                            <span class="material-symbols-outlined cursor-pointer">
+                                ballot
+                            </span>
+                            <span class="material-symbols-outlined cursor-pointer">
+                                mood
+                            </span>
+                            <span class="material-symbols-outlined cursor-pointer">
+                                calendar_month
+                            </span>
+                            <span class="material-symbols-outlined">
+                                location_on
+                            </span>
+                        </div>
+                        <div class="postbtn">
+                            <button
+                                class=" bg-[#1d9bf0]    text-sm rounded-full py-1 mr-4 px-6 text-white">Post</button>
+                        </div>
+
+                    </div>
+
+
+
+                </div>
+            </div>
+            <div class="h-[1px] w-full bg-gray-500"></div>
+
+            <div class="posts">
+                <div class="post">
+                    <div class="flex">
+                        <div class="image m-4">
+                            <img class="w-10 rounded-full"
+                                src="https://pbs.twimg.com/profile_images/1756183589891317760/AKH-YqNG_x96.jpg" alt="">
+                        </div>
+
+                        <div class="content">
+                            <span class="font-bold hover:underline hover:cursor-pointer "> Historic Vids </span> <span
+                                class="text-gray-500">@historyinmemes . Mar 28 </span>
+                            <div>unknown black liquid starts pouring out of the computer</div>
+                            <div class="postimg m-4 ml-0">
+                                <img class="rounded-xl"
+                                    src="https://pbs.twimg.com/media/GJpryoxWIAElAlM?format=jpg&name=medium" alt="">
+                            </div>
+                            <div class="icons flex justify-between mx-3 text-gray-600 ">
+                                <div class="icon flex items-center justify-cente">
+                                    <span class="material-symbols-outlined">
+                                        chat_bubble
+                                    </span>1k
+                                </div>
+
+                                <div class="icon flex items-center justify-cente">
+                                    <span class="material-symbols-outlined">
+                                        repeat
+                                    </span>12k
+                                </div>
+
+                                <div class="icon flex items-center justify-cente">
+                                    <span class="material-symbols-outlined">
+                                        favorite
+                                    </span>400k
+                                </div>
+
+                                <div class="icon flex items-center justify-cente">
+                                    <span class="material-symbols-outlined">
+                                        bar_chart
+                                    </span>1m
+                                </div>
+
+                                <div class="icon flex items-center justify-cente">
+                                    <span class="material-symbols-outlined">
+                                        chat_bubble
+                                    </span>1k
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="h-[1px] w-full bg-gray-500"></div>
+
+
+
+                <div class="post">
+                    <div class="flex">
+                        <div class="image m-4">
+                            <img class="w-10 rounded-full"
+                                src="https://pbs.twimg.com/profile_images/1756183589891317760/AKH-YqNG_x96.jpg" alt="">
+                        </div>
+
+                        <div class="content">
+                            <span class="font-bold hover:underline hover:cursor-pointer "> Historic Vids </span> <span
+                                class="text-gray-500">@historyinmemes . Mar 28 </span>
+                            <div>buy crocs at the cheapest prices</div>
+                            <div class="postimg m-4 ml-0">
+                                <img src="https://pbs.twimg.com/media/GGH7FgCXIAAfrbM?format=png&name=small" alt="">
+                            </div>
+                            <div class="icons flex justify-between mx-3 text-gray-600 ">
+                                <div class="icon flex items-center justify-cente">
+                                    <span class="material-symbols-outlined">
+                                        chat_bubble
+                                    </span>1k
+                                </div>
+
+                                <div class="icon flex items-center justify-cente">
+                                    <span class="material-symbols-outlined">
+                                        repeat
+                                    </span>12k
+                                </div>
+
+                                <div class="icon flex items-center justify-cente">
+                                    <span class="material-symbols-outlined">
+                                        favorite
+                                    </span>400k
+                                </div>
+
+                                <div class="icon flex items-center justify-cente">
+                                    <span class="material-symbols-outlined">
+                                        bar_chart
+                                    </span>1m
+                                </div>
+
+                                <div class="icon flex items-center justify-cente">
+                                    <span class="material-symbols-outlined">
+                                        chat_bubble
+                                    </span>1k
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="h-[1px] w-full bg-gray-500"></div>
+
+
+
+                <div class="post">
+                    <div class="flex">
+                        <div class="image m-4">
+                            <img class="w-10 rounded-full"
+                                src="data:image/webp;base64,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"
+                                alt="">
+                        </div>
+
+                        <div class="content">
+                            <span class="font-bold hover:underline hover:cursor-pointer "> Historic Vids </span> <span
+                                class="text-gray-500">@historyinmemes . Mar 28 </span>
+                            <div>happy to share twitter is the best app to use</div>
+                            <div class="postimg m-4 ml-0">
+
+                            </div>
+                            <div class="icons flex justify-between mx-3 text-gray-600 ">
+                                <div class="icon flex items-center justify-cente">
+                                    <span class="material-symbols-outlined">
+                                        chat_bubble
+                                    </span>1k
+                                </div>
+
+                                <div class="icon flex items-center justify-cente">
+                                    <span class="material-symbols-outlined">
+                                        repeat
+                                    </span>12k
+                                </div>
+
+                                <div class="icon flex items-center justify-cente">
+                                    <span class="material-symbols-outlined">
+                                        favorite
+                                    </span>400k
+                                </div>
+
+                                <div class="icon flex items-center justify-cente">
+                                    <span class="material-symbols-outlined">
+                                        bar_chart
+                                    </span>1m
+                                </div>
+
+                                <div class="icon flex items-center justify-cente">
+                                    <span class="material-symbols-outlined">
+                                        chat_bubble
+                                    </span>1k
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="h-[1px] w-full bg-gray-500"></div>
+
+
+
+                <div class="post">
+                    <div class="flex">
+                        <div class="image m-4">
+                            <img class="w-10 rounded-full"
+                                src="https://pbs.twimg.com/profile_images/1756183589891317760/AKH-YqNG_x96.jpg" alt="">
+                        </div>
+
+                        <div class="content">
+                            <span class="font-bold hover:underline hover:cursor-pointer "> Historic Vids </span> <span
+                                class="text-gray-500">@historyinmemes . Mar 28 </span>
+                            <div>unknown black liquid starts pouring out of the computer</div>
+                            <div class="postimg m-4 ml-0">
+                                <img class="rounded-xl"
+                                    src="https://pbs.twimg.com/media/GJpryoxWIAElAlM?format=jpg&name=medium" alt="">
+                            </div>
+                            <div class="icons flex justify-between mx-3 text-gray-600 ">
+                                <div class="icon flex items-center justify-cente">
+                                    <span class="material-symbols-outlined">
+                                        chat_bubble
+                                    </span>1k
+                                </div>
+
+                                <div class="icon flex items-center justify-cente">
+                                    <span class="material-symbols-outlined">
+                                        repeat
+                                    </span>12k
+                                </div>
+
+                                <div class="icon flex items-center justify-cente">
+                                    <span class="material-symbols-outlined">
+                                        favorite
+                                    </span>400k
+                                </div>
+
+                                <div class="icon flex items-center justify-cente">
+                                    <span class="material-symbols-outlined">
+                                        bar_chart
+                                    </span>1m
+                                </div>
+
+                                <div class="icon flex items-center justify-cente">
+                                    <span class="material-symbols-outlined">
+                                        chat_bubble
+                                    </span>1k
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="h-[1px] w-full bg-gray-500"></div>
+            </div>
+        </div>
+
+
+
+
+        <div class="third  w-full hidden md:block">
+            <div class="search m-3">
+                <input type="text" placeholder="search" class="rounded-full w-1/2 bg-[#16181c]  px-4 py-2 ">
+            </div>
+
+            <div class="whats sticky top-0 w-1/2  bg-[#16181c] text-white m-3 rounded-xl py-5 space-y-3">
+                <h1 class="text-xl font-bold">What's Happening </h1>
+                <div class="item p-3   hover:cursor-pointer hover:bg-gray-800 px-3">
+                    <div class="font-bold text-sm text-gray-700">Trending in India</div>
+                    <div class="font-bold ">#fashbox</div>
+                    <div>400.2k posts</div>
+                </div>
+
+                <div class="item p-3   hover:cursor-pointer hover:bg-gray-800 px-3">
+                    <div class="font-bold text-sm text-gray-700">Trending in India</div>
+                    <div class="font-bold ">#Orry</div>
+                    <div>25.2k posts</div>
+                </div>
+
+                <div class="item p-3   hover:cursor-pointer hover:bg-gray-800 px-3">
+                    <div class="font-bold text-sm text-gray-700">Trending in India</div>
+                    <div class="font-bold ">#telugutechspot</div>
+                    <div>12.2k posts</div>
+                </div>
+
+                <div class="item p-3   hover:cursor-pointer hover:bg-gray-800 px-3">
+                    <div class="font-bold text-sm text-gray-700">Trending in India</div>
+                    <div class="font-bold ">#lave</div>
+                    <div>10.2k posts</div>
+                </div>
+
+            </div>
+
+            <div class="whats sticky top-[50vh] w-1/2  bg-[#16181c] text-white m-3 rounded-xl py-5 space-y-3">
+                <h1 class="text-xl font-bold">Who to Follow</h1>
+
+
+                <div class="items-center p-3 space-y-4  hover:cursor-pointer hover:bg-gray-800 px-3">
+
+                    <div class="account flex justify-between ">
+                        <div class="font-bold   ">telugutechspot</div>
+                        <div class="follow "><button
+                                class="bg-white text-black rounded-2xl px-2 py-1 font-bond hover:bg-slate-500">Follow</button>
+                        </div>
+                    </div>
+
+                    <div class="account flex justify-between">
+                        <div class="font-bold   ">LAVE </div>
+                        <div class="follow "><button
+                                class="bg-white text-black rounded-2xl px-2 py-1 font-bond hover:bg-slate-500">Follow</button>
+                        </div>
+                    </div>
+
+                    <div class="account flex justify-between ">
+                        <div class="font-bold   ">Fashbox</div>
+                        <div class="follow "><button
+                                class="bg-white text-black rounded-2xl px-2 py-1 font-bond hover:bg-slate-500">Follow</button>
+                        </div>
+                    </div>
+
+                    <div class="show text-blue-600 underline space-y-3">show more</div>
+
+
+                </div>
+
+
+
+            </div>
+
+            <div class="terms sticky top-[84vh] w-1/2  bg-[#16181c] rounded-xl text-gray-500 m-3 text-xs py-5 space-y-3 mt-4">
+               <span class="hover:underline mr-2">Terms of Service</span> 
+               <span class="hover:underline mr-2">Privacy Policy</span> 
+               <span class="hover:underline mr-2">Cookie Policy</span> 
+               <span class="hover:underline mr-2">Accessibility</span>
+               <span class="hover:underline mr-2">Ads info</span> 
+               <span class="hover:underline mr-2">More</span> 
+               <span class="hover:underline mr-2"> © 2024 X Corp.</span>
+            </div>
+
+
+        </div>
+
+    </div>
+</body>
+
+</html>
